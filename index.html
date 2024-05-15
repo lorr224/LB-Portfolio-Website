@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <title>LB</title>
+</head>
+
+<body>
+
+    <!-- --   HEADER  --  -->
+    <header id="header" class="header">
+        <!--  -- Box für Logo zieht sich über die Hälfte der Navigation --  -->
+        <div class="logocontainer">
+            <div id="logo" class="">
+                <!--  --  Link mit Logo führt zum Seitenanfang und die Seite neu lädt --  -->
+                <a href="#" onclick="window.location.reload(true);"><img src="img/LB - Black 25mm.png" alt="Logo"></a>
+            </div>
+        </div>
+        <!--  --  Section für Menu + Burger-Button  --  -->
+        <div class="menuContainer">
+            <div id="menu" class="">
+                <!--  --  Box für Burger-Button + Menu in Tabletsize und größer --  -->
+                <div id="burger-menu" class="">
+                    <!--  -- Burger-Button  --  -->
+                    <div id="burger-button" class="">
+                        <img src="img/burger-cold steel.png" alt="">
+                    </div>
+                    <!--  --  Menu Links für Tabletsize und größer  --  -->
+                    <nav id="menu-links" class="hidden">
+                        <!--  --  Link zur about-section -->
+                        <a href="#navsec2" id="bl-about" class="" onclick="window.location.reload(true);">ABOUT_</a>
+                        <!--  --  Link zur work-section  --  -->
+                        <a href="#navsec3" id="bl-work" class="" onclick="window.location.reload(true);">WORK_</a>
+                        <!--  --  Link zur contact-section  --  -->
+                        <a href="#navsec4" id="bl-contact" class="" onclick="window.location.reload(true);">CONTACT_</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--  --  Section für das mobile-menu (wird angezeigt wenn man auf Burger-Button klickt)  --  -->
+        <div id="mobile-menu" class="origin animate-open-menu hidden">
+            <!--  --  Button um das Burger-Menu zu schließen  --  -->
+            <a href id="escape-button" class="">
+                X
+            </a>
+            <!--  --  Menu für mobile-links  --  -->
+            <nav id="mobile-links">
+                <!--  --  Link zum Seitenanfang  --  -->
+                <a href="#" id="ml-home" class="ml-link" onclick="window.location.reload(true);">HOME_</a>
+                <!--  --  Link zur about-section  --  -->
+                <a href="#navsec2" id="ml-about" class="ml-link" onclick="window.location.reload(true);">ABOUT_</a>
+                <!--  --  Link zur work-section  --  -->
+                <a href="#navsec3" id="ml-work" class="ml-link" onclick="window.location.reload(true);">WORK_</a>
+                <!--  --  Link zur contact-section  --  -->
+                <a href="#navsec4" id="ml-contact" class="ml-link" onclick="window.location.reload(true);">CONTACT_</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--  --  MAIN  -- -->
+    <main>
+        <!--  --  SECTION 1  HOME  -- -->
+        <section id="home" class="page">
+            <!-- --  Begrüßungstext -- -->
+            <div id="welcome-text-box" class="">
+                <div class="text-move-box">
+                    <div class="objectmove">
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                        <h2>WELCOME_</h2>
+                    </div>
+                </div>
+                <div class="intro-box">
+                    <p>
+                        THIS IS MY CREATIVE SAFESPACE<br>
+                        CURRENTLY <span class="highlight">UI/UX </span><br><br>
+                        <a href="#navsec2" id="home-about" class="intern-link">&#9660; learn_more_</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bilder Karussel -->
+            <div id="" class="home-gallery autoskip">
+                <!-- Bild No 1 mit class: slide (für slider-Funktion) und class: current-image (damit dieses Bild von Anfang an angezeigt wird) -->
+                <div class="home-slide home-current-image">
+                    <img src="img/LB - Scan Facewarp websize.jpg" alt="Image 1">
+                </div>
+                <!-- Bild No 2 mit class: slide (für slider-Funktion) -->
+                <div class="home-slide">
+                    <img src="img/work/Asset2.jpg" alt="Image 2">
+                </div>
+                <!-- Bild No 3 mit class: slide (für slider-Funktion) -->
+                <div class="home-slide">
+                    <img src="img/work/Asset3.jpg" alt="Image 3">
+                </div>
+                <!-- Bild No 4 mit class: slide (für slider-Funktion) -->
+                <div class="home-slide">
+                    <img src="img/work/Asset4.jpg" alt="Image 4">
+                </div>
+                <!-- Bild No 5 mit class: slide (für slider-Funktion) -->
+                <div class="home-slide">
+                    <img src="img/work/Asset5.jpg" alt="Image 5">
+                </div>
+                <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                <div class="home-slide">
+                    <img src="img/work/Asset6.jpg" alt="Image 6">
+                </div>
+                <!-- Button = schaltet auf das vorherige Bild -->
+                <button class="home-prev">&#x25C2;</button>
+                <!-- Button = schaltet auf das nächste Bild -->
+                <button class="home-next">&#x25C2</button>
+            </div>
+
+            <!-- <div id="textPathcontainer">
+                <svg width="400" height="400" viewBox="0 0 400 400">
+                    <path id="circlePath" d="M 30 200 a 120, 120 0 1, 1 320, 0 a 120, 120 0 1 1 -320, 0" fill="none">
+                    </path>
+                    <text>
+                        <textPath href="#circlePath">
+                            This is my Text Path Animation Test - Yeeehaaaaa
+                        </textPath>
+                    </text>
+                </svg>
+            </div> -->
+        </section>
+
+        <!--  --  SECTION 2 ABOUT --  -->
+        <section id="about" class="page">
+            <!-- Ankerpunkt für navigation oben ab tablet-size und größer -->
+            <div id="navsec2"></div>
+            <!-- Noise-Effekt -->
+            <!-- <div class="noise-layer"></div> -->
+            <!-- Headline -->
+            <h2>ABOUT_</h2>
+            <!-- Inhalt -->
+            <div class="about-content">
+                <!--  -- Box für Bild --  -->
+                <div id="image-box" class="scrollElement">
+                    <img id="about_image" src="img/Leo_Hello2.gif" alt="Hello Leo">
+                </div>
+                <!--  --  Box für About-Text  --  -->
+                <div id="text-box" class="">
+                    <!--  --  Box für Image-Text 2  --  -->
+
+                    <h3>LEONARD BETZ </h3>
+                    <br>
+                    <!-- -- About-Text -- -->
+                    I am a creative mind <br>
+                    <div class="outer-headings">
+                        focused on
+                        <div class="inner-headings">
+                            <span class="highlight">
+                                UI/UX Design <br>
+                                Front-End Development <br>
+                                Graphic Design <br>
+                                Illustration <br>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Inhalte die mit READ More erweitert werden -->
+                    <div class="hidden-content" id="hiddenContent1">
+                        <br>
+                        I craft visually appealing<br>
+                        and efficient digital experiences<br>
+                        through research and prototyping.<br><br>
+                        <a href="#navsec3" id="about-work" class="intern-link">&#9660; check_out_my_work_</a>
+                        <br><br><br>
+                        It's all about the details. <br>
+                        Fun is important. <br>
+                        Let's make the difference! <br><br>
+                        <a href="#navsec4" id="about-contact" class="intern-link">&#9660; contact_me_</a>
+                        <br><br>
+                        </p>
+                    </div>
+                    <!-- Read more Button -->
+                    <span id="toggle-link" class="toggle-link toggle-link1 scrollElement"
+                        onclick="toggleContent1()">&#8594;
+                        show_more_</span>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+        <!-- --  SECTION 3 WORK  --  -->
+        <section id="work" class="page">
+            <!-- Ankerpunkt für navigation oben ab tablet-size und größer -->
+            <div id="navsec3"></div>
+            <h2>WORK_</h2>
+
+            <div class="work-content">
+                <a href="#navsec3" onclick="window.location.reload(true);">
+                    <div class="backtowork">&#8593;</div>
+                </a>
+
+
+                <!------------ Projekt 1 JURASSIC HIVE ------------------>
+
+                <div class="card">
+                    <div class="hidden-content" id="hiddenContent2">
+                        <h3>Jurassic Hive</h3>
+                        <br>
+                        <!-- Bilder Karussel Projekt1 -->
+                        <div id="" class="projekt1-gallery scrollElement" onclick="toggleFullScreen(this)">
+                            <!-- Bild No 1 mit class: slide (für slider-Funktion) und class: current-image (damit dieses Bild von Anfang an angezeigt wird) -->
+                            <div class="projekt1-slide projekt1-current-image">
+                                <img src="img/work/Jurassic_Hive/Title@1x.webp" alt="Image 1">
+                            </div>
+                            <!-- Bild No 2 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Sketches.png" alt="Image 2">
+                            </div>
+                            <!-- Bild No 3 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Logo Development.png" alt="Image 3">
+                            </div>
+                            <!-- Bild No 4 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Approved Logo.png" alt="Image 4">
+                            </div>
+                            <!-- Bild No 4 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Empathy Map.png" alt="Image 4">
+                            </div>
+                            <!-- Bild No 5 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Persona 3.png" alt="Image 5">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/User Flow Diagram.png" alt="Image 6">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Low-Fidelity Wireframes/Low-Fidelity Wireframes Mobile.png"
+                                    alt="Image 7">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Mid-Fidelity Wireframes/Mid-Fidelity Wireframes Mobile.png"
+                                    alt="Image 8">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/High-Fidelity Wireframes/High-Fidelity Wireframes Mobile.png"
+                                    alt="Image 8">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/High-Fidelity Wireframes/High-Fidelity Wireframes Desktop.png"
+                                    alt="Image 8">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Mockups/12.png" alt="Image 8">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt1-slide">
+                                <img src="img/work/Jurassic_Hive/Mockups/1.png" alt="Image 8">
+                            </div>
+                            <!-- Video Prototype -->
+                            <div class="projekt1-slide">
+                                <video id="jurassic_runthrough" src="vid/jurassic_hive_desktop.m4v" controls
+                                    loop muted contextmenu="false"></video>
+                            </div>
+                            <!-- Video Prototype -->
+                            <div class="projekt1-slide">
+                                <video class="vid" src="vid/jurassic_hive_mobile.m4v" controls loop muted
+                                    contextmenu="false"></video>
+                            </div>
+                            <!-- Button = schaltet auf das vorherige Bild -->
+                            <button class="projekt1-prev" onclick="previousImage(event)">&#x25C2;</button>
+                            <!-- Button = schaltet auf das nächste Bild -->
+                            <button class="projekt1-next" onclick="nextImage(event)">&#x25C2</button>
+                        </div>
+                        <br><br>
+                        <hr>
+                        <br><br>
+                        <div class="pic adjust scrollElement2">
+                            <img src="img/work/Jurassic_Hive/Speechbubbles/Welcome.png" alt="Welcome dinosaur">
+                        </div>
+                        <br>
+                        <div class="contentContainer row">
+                            <div class="content bgGrey">
+                                <h4>Overview</h4>
+                                <div class="imgContainer1 scale-tablet scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1 " src="img/work/Jurassic_Hive/Mockups/12.png"
+                                        alt="Image Jurassic Hive Mockup mobile version">
+                                </div>
+                                <br>
+                                <p>
+                                    Welcome to Jurassic Hive, <br>
+                                    where dinosaur-themed burgers <br>
+                                    and milkshakes meet <br>
+                                    futuristic nostalgia <br>
+                                    in an American diner setting. <br> <br>
+
+                                    As the UI/UX designer <br>
+                                    behind the brand, <br>
+                                    I've crafted everything <br>
+                                    from the logo to the website, <br>
+                                    infusing it with fun, honesty, <br>
+                                    and a getaway vibe. <br><br>
+
+                                    With quirky characters, <br>
+                                    handcrafted imagery, <br>
+                                    and a jukebox playing hot beats, <br>
+                                    Jurassic Hive promises <br>
+                                    an unforgettable dining experience. <br>
+                                </p>
+                            </div>
+                            <br><br>
+                            <div class="content bgGrey">
+                                <h4>Context</h4>
+                                <div class="imgContainer1 scale-tablet scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1 " src="img/work/Jurassic_Hive/Testimonials.png"
+                                        alt="Image Jurassic Hive Mockup mobile version">
+                                </div>
+                                <br>
+                                <p>
+                                    The Jurassic Hive UI/UX project <br>
+                                    emerged from a desire <br>
+                                    to bring together two seemingly <br>
+                                    disparate worlds – the prehistoric <br>
+                                    and the modern – into a seamless <br>
+                                    digital experience. <br><br>
+
+                                    Inspired by the idea <br>
+                                    of an American diner for dinosaurs, <br>
+                                    the project aimed to create <br>
+                                    a visually captivating <br>
+                                    and user-friendly website <br>
+                                    that embodies the brand's ethos <br>
+                                    of fun, entertainment, and escapism. <br><br>
+
+                                    By infusing elements of nostalgia, <br>
+                                    futuristic design, and mouthwatering imagery, <br>
+                                    the goal was to transport visitors <br>
+                                    into a world where burgers, milkshakes, <br>
+                                    and good times reign supreme. <br><br>
+
+                                    From conceptualizing the brand <br>
+                                    to designing every pixel, <br>
+                                    the project was a labor of love, <br>
+                                    blending creativity with functionality <br>
+                                    to deliver an immersive online journey <br>
+                                    that mirrors the excitement <br>
+                                    of dining at Jurassic Hive. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="pic2 adjust2 scrollElement2">
+                            <img src="img/work/Jurassic_Hive/Speechbubbles/Get ready.png" alt="Welcome dinosaur">
+                        </div>
+                        <br>
+                        <div class="contentContainer row">
+                            <div class="content bgGrey">
+                                <h4>Objective</h4>
+                                <br>
+                                <p>
+                                    The objective of the Jurassic Hive
+                                    UI/UX project was clear:
+                                    to translate the vibrancy and
+                                    excitement of the imaginative restaurant
+                                    into an engaging digital space. <br><br>
+
+                                    By creating a website that reflects <br>
+                                    the brand's values of beeing clean, <br>
+                                    entertaining and fun, <br>
+                                    the goal was to attract <br>
+                                    and captivate visitors, <br>
+                                    enticing them to explore <br>
+                                    and learn about the experience <br>
+                                    and ultimately visit the diner. <br><br>
+
+                                    With a focus on <br>
+                                    user-friendly navigation, <br>
+                                    visually appealing design, <br>
+                                    and seamless functionality, <br>
+                                    the objective was to ensure <br>
+                                    that every interaction <br>
+                                    with the website was as enjoyable <br>
+                                    and memorable as a visit to <br>
+                                    the Jurassic Hive diner itself. <br>
+                                </p>
+                            </div>
+                            <br><br>
+                            <div class="content bgGrey">
+                                <h4>Credits</h4>
+                                <br>
+                                <p>
+                                    In bringing Jurassic Hive to life, <br>
+                                    I spearheaded:
+                                </p>
+                                <br>
+                                <span class="highlight">Branding:</span> Crafted vibrant branding <br>
+                                embodying fun and nostalgia. <br><br>
+
+                                <span class="highlight">Character Design:</span> Created quirky personas <br>
+                                capturing the restaurant's essence. <br><br>
+
+                                <span class="highlight">Logo Design:</span>
+                                Developed a captivating logo <br>
+                                as the brand's beacon. <br><br>
+
+                                <span class="highlight">Color & Typography:</span>
+                                Selected colors and typography <br>
+                                balancing retro charm <br>
+                                and modern readability. <br><br>
+
+                                <span class="highlight">Image Style:</span>
+                                Curated imagery transporting visitors <br>
+                                into the Jurassic Hive world. <br><br>
+
+                                <span class="highlight">User-Centric Design:</span>
+                                Utilized empathy maps and personas <br>
+                                for user-centric design. <br><br>
+
+                                <span class="highlight">User Flow & Wireframes:</span>
+                                Mapped user flows and crafted wireframes <br>
+                                from low to high fidelity. <br><br>
+
+                                <span class="highlight">Prototyping & Testing:</span>
+                                Brought designs to life through prototyping <br>
+                                for immersive user testing. <br>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="pic2 adjust2 scrollElement2">
+                            <img src="img/work/Jurassic_Hive/Speechbubbles/organic ingredients.png"
+                                alt="Welcome dinosaur">
+                        </div>
+                        <br>
+                        <h4>Brand Guidelines</h4>
+                        <div class="brandguidelines">
+                            <br>
+                            <div class="contentContainer row">
+                                <div class="content bgGrey">
+                                    <h5>Guiding Principles</h5>
+                                    <br>
+                                    <p>
+                                        For Jurassic Hive, <br>
+                                        <span class="highlight">"clean, entertaining, fun"</span> <br>
+                                        aren't just words – they're <br>
+                                        guiding principles <br>
+                                        that shape every aspect <br>
+                                        of the brand and user experience. <br><br>
+
+                                        From designing our website <br>
+                                        to crafting characters and imagery, <br>
+                                        I ensure each element <br>
+                                        reflects these principles. <br><br>
+
+                                        Clean design ensures smooth <br>
+                                        navigation, while entertaining elements <br>
+                                        and a touch of fun <br>
+                                        add excitement and joy <br>
+                                        to the journey through Jurassic Hive. <br>
+                                    </p>
+                                </div>
+                                <br><br>
+                                <div class="content bgGrey">
+                                    <h5>Writing Style</h5> <br>
+                                    <p>
+                                        In crafting the writing style <br>
+                                        for Jurassic Hive, <br>
+                                        I aimed for a balance <br>
+                                        of playfulness and clarity. <br><br>
+
+                                        Each word was carefully chosen <br>
+                                        to evoke the excitement <br>
+                                        and nostalgia of the diner <br>
+                                        while ensuring the message <br>
+                                        remained easy to understand. <br><br>
+
+                                        By infusing a touch of humor <br>
+                                        and personality, I aimed <br>
+                                        to create an engaging tone <br>
+                                        that resonates with the audience, <br>
+                                        inviting them to explore <br>
+                                        the world of Jurassic Hive <br>
+                                        with enthusiasm and delight. <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="contentContainer row">
+                                <div class="content bgGrey">
+                                    <h5>Sketches & Character Design</h5>
+                                    <div class="imgContainer1 scale-tablet scrollElement"
+                                        onclick="toggleFullScreen(this)">
+                                        <img class="imgV1 " src="img/work/Jurassic_Hive/Sketches.png"
+                                            alt="Image Jurassic Hive sketches & character design">
+                                    </div>
+                                    <br>
+                                    <p>
+                                        Sketching and character design <br>
+                                        played a vital role in realizing <br>
+                                        the Jurassic Hive experience. <br><br>
+
+                                        Through countless sketches, <br>
+                                        I breathed life into quirky <br>
+                                        and lovable personas <br>
+                                        that embody the spirit <br>
+                                        of the diner. <br><br>
+
+                                        Each character <br>
+                                        was meticulously crafted <br>
+                                        to evoke a sense of fun <br>
+                                        and nostalgia, adding depth <br>
+                                        and personality to the brand. <br><br>
+
+                                        These sketches served as the blueprint <br>
+                                        for the digital and physical presence, <br>
+                                        ensuring that every aspect <br>
+                                        of Jurassic Hive <br>
+                                        exudes charm and charisma. <br>
+                                    </p>
+                                </div>
+                                <br><br>
+                                <div class="content bgGrey">
+                                    <h5>Logo Development</h5>
+                                    <div class="imgContainer1 scale-tablet scrollElement"
+                                        onclick="toggleFullScreen(this)">
+                                        <img class="imgV1" src="img/work/Jurassic_Hive/Logo Development.png"
+                                            alt="Image Jurassic Hive logo development">
+                                    </div>
+                                    <br>
+                                    <p>
+                                        Crafting the logo for Jurassic Hive <br>
+                                        was a journey of creativity and vision. <br><br>
+
+                                        Through iterative sketches <br>
+                                        and revisions, I honed in <br>
+                                        on a design that captured <br>
+                                        the spirit of the diner bold, <br>
+                                        vibrant, and unforgettable. <br><br>
+
+                                        Each element, from the typography <br>
+                                        to the iconography, <br>
+                                        was carefully considered to ensure <br>
+                                        it resonated with our audience <br>
+                                        while standing out <br>
+                                        in a crowded digital landscape. <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="contentContainer row">
+                                <div class="content bgGrey">
+                                    <h5>Approved Logo</h5>
+                                    <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV1" src="img/work/Jurassic_Hive/Approved Logo.png"
+                                            alt="Image Jurassic Hive approved logo">
+                                    </div>
+                                    <br>
+                                    <p>
+                                        The approved logo for Jurassic Hive <br>
+                                        is a testament to our vibrant <br>
+                                        and dynamic brand identity. <br><br>
+
+                                        Designed to stand out <br>
+                                        on both bright and dark backgrounds, <br>
+                                        it captures the essence of the diner <br>
+                                        with bold typography and playful iconography. <br><br>
+
+                                        Whether it's displayed <br>
+                                        against a sunny sky <br>
+                                        or a starry night, <br>
+                                        the logo remains <br>
+                                        instantly recognizable. <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="contentContainer row">
+                                <div class="content bgGrey">
+                                    <h5>Primary Color</h5>
+                                    <div class="imgContainer2 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV2" src="img/work/Jurassic_Hive/Primary Color.png"
+                                            alt="Image Jurassic primary color">
+                                    </div>
+                                    <br>
+                                    <p>
+                                        Using ivory as a primary color <br>
+                                        for the background and black <br>
+                                        as the primary color for text creates <br>
+                                        a visually appealing and legible design. <br><br>
+
+                                        Ivory, with its warm and subtle undertones, <br>
+                                        imparts a sense of sophistication and elegance <br>
+                                        to the overall aesthetic. <br><br>
+
+                                        It's soft and neutral nature allows <br>
+                                        for easy integration with various design elements, <br>
+                                        making it a versatile choice for backgrounds. <br>
+                                        On the other hand, black text against <br>
+                                        an ivory background ensures <br>
+                                        optimal readability and contrast. <br>
+                                    </p>
+                                </div>
+                                <br><br>
+                                <div class="content bgGrey">
+                                    <h5>Secondary Color</h5>
+                                    <div class="imgContainer2 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV2" src="img/work/Jurassic_Hive/Secondary Color.png"
+                                            alt="Image Jurassic secondary color">
+                                    </div>
+                                    <br>
+                                    <p>
+                                        Pairing Payne's Grey secondary color <br>
+                                        for design elements <br>
+                                        and Davy's Grey for secondary text <br>
+                                        creates a harmonious and <br>
+                                        sophisticated visual composition. <br><br>
+
+                                        Payne's Grey, with it’s deep and <br>
+                                        muted tones, serves as an excellent choice <br>
+                                        for design accents, adding depth <br>
+                                        and a touch of refinement <br>
+                                        to the overall palette. <br><br>
+
+                                        It’s versatility allows it to complement <br>
+                                        the primary colors while maintaining <br>
+                                        a sense of cohesion. <br><br>
+
+                                        Davy's Grey lighter and softer shade, <br>
+                                        serves as an ideal secondary text <br>
+                                        color, providing legibility and <br>
+                                        a subtle contrast against ivory <br>
+                                        for the background. <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="contentContainer">
+                                <div class="content bgGrey">
+                                    <div class="row">
+                                        <div class="content2">
+                                            <h5>Typography</h5>
+                                            <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                                <img class="imgV1" src="img/work/Jurassic_Hive/Typography 1.png"
+                                                    alt="Image Jurassic Hive Typography 1">
+                                            </div>
+                                        </div>
+                                        <div class="content2">
+                                            <h5>&nbsp;</h5>
+                                            <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                                <img class="imgV1" src="img/work/Jurassic_Hive/Typography 2.png"
+                                                    alt="Image Jurassic Hive Typography 2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <p>
+                                        Typography at Jurassic Hive <br>
+                                        is a careful curation, ensuring readability <br>
+                                        and personality across all platforms. <br><br>
+
+                                        In most sections, I use Dosis Bold <br>
+                                        for headlines, commanding attention <br>
+                                        with its bold and modern style. <br><br>
+
+                                        However, in the team <br>
+                                        and testimonial sections, I introduce <br>
+                                        an extra touch of playfulness <br>
+                                        by employing Trashhand Regular <br>
+                                        for headings and Dosis Light <br>
+                                        for subheadings, enhancing <br>
+                                        the energetic atmosphere. <br><br>
+
+                                        Throughout the website, <br>
+                                        body text remains consistent <br>
+                                        with Montserrat Regular, <br>
+                                        providing a clean and legible foundation <br>
+                                        for conveying information. <br><br>
+
+                                        This thoughtful combination of fonts <br>
+                                        enhances the overall user experience, <br>
+                                        guiding visitors through the website <br>
+                                        with clarity and style. <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="contentContainer">
+                                <div class="content bgGrey">
+                                    <h5>Image Style</h5>
+                                    <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV1" src="img/work/Jurassic_Hive/Image Style.png"
+                                            alt="Image Jurassic Hive image style">
+                                    </div>
+                                    <br>
+                                    <p>
+                                        Choosing self-made, comic-style imagery <br>
+                                        for Jurassic Hive adds a playful and <br>
+                                        memorable touch to the brand. <br><br>
+
+                                        The hand-drawn illustrations <br>
+                                        create a unique, entertaining atmosphere, <br>
+                                        showcasing dinosaurs in amusing scenarios. <br><br>
+
+                                        This approach resonates with adiverse <br>
+                                        audience, contributing to the diner's <br>
+                                        casual and fun ambiance, making it <br>
+                                        a lively destination for patronsbr <br>
+                                        to enjoy meals with a nostalgic <br>
+                                        and adventurous flair. <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="pic2 adjust2 scrollElement2">
+                            <img src="img/work/Jurassic_Hive/Speechbubbles/tasty treats.png" alt="Welcome dinosaur">
+                        </div>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Empathy Map</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/Jurassic_Hive/Empathy Map.png"
+                                        alt="Image Jurassic Empathy Map">
+                                </div>
+                                <br>
+                                <p>
+                                    In shaping the user experience <br>
+                                    for Jurassic Hive, <br>
+                                    empathy maps were invaluable. <br>
+                                    They allowed me to delve deep <br>
+                                    into the minds of our target audience, <br>
+                                    understanding their needs, <br>
+                                    desires, and pain points. <br><br>
+
+                                    By putting myself in their shoes, <br>
+                                    I could design with empathy, <br>
+                                    ensuring every interaction with the website <br>
+                                    resonated with their emotions and motivations. <br><br>
+
+                                    This empathetic approach was crucial <br>
+                                    in creating a digital space <br>
+                                    that truly connects with our visitors <br>
+                                    on a personal level, <br>
+                                    enhancing their overall experience <br>
+                                    at Jurassic Hive. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Personas</h4>
+                                <div id="" class="persona-gallery scrollElement" onclick="toggleFullScreen(this)">
+                                    <!-- Bild No 1 mit class: slide (für slider-Funktion) und class: current-image (damit dieses Bild von Anfang an angezeigt wird) -->
+                                    <div class="persona-slide persona-current-image">
+                                        <img src="img/work/Jurassic_Hive/Persona 1.png" alt="Image Persona 1">
+                                    </div>
+                                    <!-- Bild No 2 mit class: slide (für slider-Funktion) -->
+                                    <!-- <div class="persona-gallery-slide">
+                                    <video id="jurassic_runthrough" src="vid/Runthrough.mov" controls loop
+                                        contextmenu="false"></video>
+                                </div> -->
+                                    <!-- Bild No 3 mit class: slide (für slider-Funktion) -->
+                                    <div class="persona-slide">
+                                        <img src="img/work/Jurassic_Hive/Persona 2.png" alt="Image Persona 2">
+                                    </div>
+                                    <!-- Bild No 4 mit class: slide (für slider-Funktion) -->
+                                    <div class="persona-slide">
+                                        <img src="img/work/Jurassic_Hive/Persona 3.png" alt="Image Persona 3">
+                                    </div>
+                                    <!-- Bild No 5 mit class: slide (für slider-Funktion) -->
+                                    <div class="persona-slide">
+                                        <img src="img/work/Jurassic_Hive/Persona 4.png" alt="Image Persona 4">
+                                    </div>
+                                    <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                                    <div class="persona-slide">
+                                        <img src="img/work/Jurassic_Hive/Persona 5.png" alt="Image Persona 5">
+                                    </div>
+                                    <!-- Button = schaltet auf das vorherige Bild -->
+                                    <button class="persona-prev" onclick="previousImage(event)">&#x25C2;</button>
+                                    <!-- Button = schaltet auf das nächste Bild -->
+                                    <button class="persona-next" onclick="nextImage(event)">&#x25C2</button>
+                                </div>
+                                <br>
+                                <p>
+                                    Crafting personas for Jurassic Hive <br>
+                                    was an illuminating journey. <br><br>
+
+                                    Immersing myself in the minds <br>
+                                    of our target audience, <br>
+                                    I gained insights into their needs, <br>
+                                    preferences, and behaviors. <br>
+
+                                    Through this process, <br>
+                                    I developed detailed profiles <br>
+                                    representing various segments <br>
+                                    of our customer base. <br><br>
+
+                                    These personas served as <br>
+                                    invaluable guides, <br>
+                                    shaping design decisions <br>
+                                    to ensure the website <br>
+                                    resonated deeply with users. <br><br>
+
+                                    By empathizing with their perspectives, <br>
+                                    I crafted a digital experience <br>
+                                    tailored to their desires, <br>
+                                    enriching their exploration <br>
+                                    of Jurassic Hive. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>User Flow Diagram</h4>
+                                <div class="imgContainer3 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV3" src="img/work/Jurassic_Hive/User Flow Diagram.png"
+                                        alt="Image Jurassic User Flow Diagram">
+                                </div>
+                                <p>
+                                    Creating the user flow diagram <br>
+                                    for Jurassic Hive was a pivotal step <br>
+                                    in crafting a seamless digital experience. <br><br>
+
+                                    It allowed me to visualize the journey <br>
+                                    our users would take through the website, <br>
+                                    from landing on the homepage <br>
+                                    to finaly making the decision <br>
+                                    to visit Jurassic Hive. <br><br>
+
+                                    By mapping out every step and interaction, <br>
+                                    I could identify potential pain points <br>
+                                    and streamline the navigation <br>
+                                    to ensure a smooth and intuitive experience. <br><br>
+
+                                    This user-centric approach ensured <br>
+                                    that visitors could easily find <br>
+                                    what they were looking for, <br>
+                                    ultimately enhancing their satisfaction <br>
+                                    and engagement with Jurassic Hive. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="pic2 scrollElement2">
+                            <img src="img/work/Jurassic_Hive/Speechbubbles/stop by.png" alt="Welcome dinosaur">
+                        </div>
+                        <br>
+                        <h4>Wireframes - Mobile</h4>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <div class="content2">
+                                    <h5>Low-Fidelity-Wireframes</h5>
+                                    <div class="imgContainer3 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV3"
+                                            src="img/work/Jurassic_Hive/Low-Fidelity Wireframes/Low-Fidelity Wireframes Mobile.png"
+                                            alt="image low fidelity wireframes mobile">
+                                    </div>
+                                </div>
+                                <div class="content2">
+                                    <!-- <h5>&nbsp;</h5> -->
+                                    <p>
+                                        In the initial stages <br>
+                                        of designing Jurassic Hive, <br>
+                                        I relied on scribbles and <br>
+                                        low-fidelity wireframes <br>
+                                        to flesh out ideas and concepts. <br><br>
+
+                                        These rough sketches allowed me <br>
+                                        to quickly iterate and explore different <br>
+                                        layout options and user flows. <br><br>
+
+                                        By embracing simplicity <br>
+                                        and focusing on the core elements, <br>
+                                        I could efficiently communicate <br>
+                                        design concepts and <br>
+                                        gather feedback from stakeholders. <br><br>
+
+                                        These low-fidelity wireframes <br>
+                                        served as the foundation <br>
+                                        for the more detailed designs <br>
+                                        that followed, ensuring that <br>
+                                        every aspect of the user experience <br>
+                                        was carefully considered from the outset. <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <div class="content2">
+                                    <h5>Mid-Fidelity-Wireframes</h5>
+                                    <div class="imgContainer3 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV3"
+                                            src="img/work/Jurassic_Hive/Mid-Fidelity Wireframes/Mid-Fidelity Wireframes Mobile.png"
+                                            alt="image mid fidelity wireframes mobile">
+                                    </div>
+                                </div>
+                                <div class="content2">
+                                    <p>
+                                        As I transitioned to mid-fidelity wireframes, <br>
+                                        I elevated the level of detail <br>
+                                        while maintaining a focus on <br>
+                                        usability and functionality. <br><br>
+
+                                        These wireframes provided <br>
+                                        a clearer picture of the layout, <br>
+                                        content hierarchy, <br>
+                                        and interaction elements, <br>
+                                        allowing me to refine <br>
+                                        the user experience further. <br><br>
+
+                                        By adding more visual elements <br>
+                                        and refining the design elements, <br>
+                                        I could better convey the overall look <br>
+                                        and feel of the website. <br><br>
+
+                                        These mid-fidelity wireframes served <br>
+                                        as a crucial step in the design process, <br>
+                                        bridging the gap between concept <br>
+                                        and implementation while ensuring <br>
+                                        that the final product would meet both <br>
+                                        user needs and business goals. <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <div class="content2">
+                                    <h5>High-Fidelity-Wireframes</h5>
+                                    <div class="imgContainer3 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV3"
+                                            src="img/work/Jurassic_Hive/High-Fidelity Wireframes/High-Fidelity Wireframes Mobile.png"
+                                            alt="image high fidelity wireframes mobile">
+                                    </div>
+                                </div>
+                                <div class="row bottom">
+                                    <div class="content2">
+                                        <p>
+                                            In developing high-fidelity wireframes, <br>
+                                            I brought the design to life <br>
+                                            with polished visuals and refined details. <br><br>
+
+                                            Every element was meticulously crafted <br>
+                                            to accurately represent the final product, <br>
+                                            from typography and colors to imagery. <br><br>
+
+                                            These wireframes provided <br>
+                                            a comprehensive blueprint for <br>
+                                            the website's development, <br>
+                                            ensuring a seamless transition <br>
+                                            from design to implementation. <br><br>
+
+                                            By incorporating feedback from user testings, <br>
+                                            I fine-tuned the high-fidelity wireframes <br>
+                                            to deliver an engaging and <br>
+                                            user-friendly experience <br>
+                                            that captures the essence of Jurassic Hive. <br>
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <!-- Video Prototype -->
+                                    <div class="prototype-mobile">
+                                        <video class="vid" src="vid/jurassic_hive_mobile.m4v" controls loop
+                                            muted contextmenu="false" onclick="toggleFullScreen(this)"></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <h4>Wireframes - Desktop</h4>
+                        <br>
+
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <div class="content2">
+                                    <h5>Mid-Fidelity-Wireframes</h5>
+                                    <div class="imgContainer3 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV3"
+                                            src="img/work/Jurassic_Hive/Mid-Fidelity Wireframes/Mid-Fidelity Wireframes Desktop.png"
+                                            alt="image mid fidelity wireframes desktop">
+                                    </div>
+                                </div>
+                                <div class="content2">
+                                    <p>
+                                        In creating mid-fidelity wireframes <br>
+                                        for Jurassic Hive's desktop version, <br>
+                                        I prioritized responsive design principles. <br><br>
+
+                                        These wireframes served as <br>
+                                        a flexible foundation, <br>
+                                        ensuring seamless adaptability <br>
+                                        across various screen sizes and devices. <br><br>
+
+                                        By incorporating elements <br>
+                                        like fluid grids and scalable components, <br>
+                                        I aimed to maintain consistency <br>
+                                        and usability regardless <br>
+                                        of the user's device. <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <div class="content2">
+                                    <h5>High-Fidelity-Wireframes</h5>
+                                    <div class="imgContainer3 scrollElement" onclick="toggleFullScreen(this)">
+                                        <img class="imgV3"
+                                            src="img/work/Jurassic_Hive/High-Fidelity Wireframes/High-Fidelity Wireframes Desktop.png"
+                                            alt="image high fidelity wireframes desktop">
+                                    </div>
+                                </div>
+                                <div class="content2">
+                                    <p>
+                                        For the high-fidelity wireframes <br>
+                                        of Jurassic Hive's desktop version, <br>
+                                        I focused on refining every detail <br>
+                                        to create a visually stunning <br>
+                                        and immersive experience. <br><br>
+
+                                        I ensured that every element <br>
+                                        was pixel-perfect and aligned <br>
+                                        with the brand's aesthetic. <br><br>
+
+                                        By incorporating responsive design principles, <br>
+                                        I guaranteed that the desktop interface <br>
+                                        would seamlessly adapt <br>
+                                        to various screen sizes <br>
+                                        without compromising on usability <br>
+                                        or visual appeal. <br><br>
+
+                                        These high-fidelity wireframes set the stage <br>
+                                        for the development of a desktop experience <br>
+                                        that captivates users and <br>
+                                        brings the Jurassic Hive brand to life. <br>
+                                    </p>
+                                </div>
+                                <br>
+                                <!-- Video Prototype -->
+                                <div class="prototype-desktop">
+                                    <video id="jurassic_runthrough" class="vid"
+                                        src="vid/jurassic_hive_desktop.m4v" controls loop muted
+                                        contextmenu="false" onclick="toggleFullScreen(this)"></video>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="pic2 adjust2 scrollElement2">
+                            <img src="img/work/Jurassic_Hive/Speechbubbles/see you soon.png" alt="Welcome dinosaur">
+                        </div>
+                    </div>
+                    <span id="toggle-link" class="toggle-link toggle-link2 scrollElement"
+                        onclick="toggleContent2()">&#8594;
+                        show_more_</span>
+                </div>
+
+                <!------------- Projekt 2 BIZZLING ------------------>
+                <div class="card">
+                    <div class="hidden-content" id="hiddenContent3">
+                        <h3>Bizzling</h3>
+                        <br>
+                        <!-- Bilder Karussel Projekt1 -->
+                        <div id="" class="projekt2-gallery scrollElement" onclick="toggleFullScreen(this)">
+                            <!-- Bild No 1 mit class: slide (für slider-Funktion) und class: current-image (damit dieses Bild von Anfang an angezeigt wird) -->
+                            <div class="projekt2-slide projekt2-current-image">
+                                <img src="img/work/Bizling/Cover.png" alt="Image 1">
+                            </div>
+                            <!-- Bild No 2 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt2-slide">
+                                <img src="img/work/Bizling/Konzept.png" alt="Image 2">
+                            </div>
+                            <!-- Bild No 3 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt2-slide">
+                                <img src="img/work/Bizling/Persona.png" alt="Image 3">
+                            </div>
+                            <!-- Bild No 4 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt2-slide">
+                                <img src="img/work/Bizling/Nutzungsszenario.png" alt="Image 4">
+                            </div>
+                            <!-- Bild No 5 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt2-slide">
+                                <img src="img/work/Bizling/Low-Fidelity Wireframes.png" alt="Image 5">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt2-slide">
+                                <img src="img/work/Bizling/User Interface Design 1.png" alt="Image 6">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt2-slide">
+                                <img src="img/work/Bizling/User Interface Design 2.png" alt="Image 7">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt2-slide">
+                                <img src="img/work/Bizling/Dark mode User Interface Design 1.png" alt="Image 8">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt2-slide">
+                                <img src="img/work/Bizling/Dark mode User Interface Design 2.png" alt="Image 8">
+                            </div>
+                            <!-- Video Prototype -->
+                            <div class="projekt2-slide">
+                                <video id="bizling_runthrough" src="vid/bizling_prototype.m4v" controls loop muted
+                                    contextmenu="false"></video>
+                            </div>
+                            <!-- Button = schaltet auf das vorherige Bild -->
+                            <button class="projekt2-prev" onclick="previousImage(event)">&#x25C2;</button>
+                            <!-- Button = schaltet auf das nächste Bild -->
+                            <button class="projekt2-next" onclick="nextImage(event)">&#x25C2</button>
+                        </div>
+                        <br><br>
+                        <hr>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Overview</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/Bizling/Konzept.png" alt="image bizling concept">
+                                </div>
+                                <br>
+                                <p>
+                                    Welcome to Bizling – your ultimate solution for efficient and empathetic
+                                    communication in the professional world! <br><br>
+                                    Say "Goodbye" to endless drafts and "Hello" to professional, time-saving
+                                    messages
+                                    with a touch of humanity. <br>
+                                    With this AI-powered app, you can effortlessly create professional and
+                                    empathetic
+                                    texts, so you have more time for what matters! <br><br>
+                                    Whether you want to improve your communication skills or simply spend less time
+                                    crafting emails – Bizling is here for you.
+                                </p>
+                            </div>
+                            <br><br>
+                            <div class="content bgGrey">
+                                <h4>Context</h4>
+                                <br>
+                                <p>
+                                    The idea for Bizling came to me when I found myself trapped in endless email
+                                    loops,
+                                    losing valuable time for my core tasks. <br>
+                                    I knew there had to be a better solution. So, I set out to bridge the gap
+                                    between
+                                    efficiency and empathy. <br> <br>
+                                    My design process was a blend of creativity, research, and relentless iteration.
+                                    I aimed to create an app that wasn't just functional but also humane – one that
+                                    understands and supports users' needs.
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Objective</h4>
+                                <br>
+                                <p>
+                                    My objective in creating Bizling was to revolutionize professional communication
+                                    by
+                                    providing users with a tool that streamlines the process while maintaining a
+                                    human
+                                    touch. <br> <br>
+                                    I aimed to empower individuals to navigate the demands of modern work
+                                    environments
+                                    with ease, saving time and reducing stress associated with crafting effective
+                                    messages. <br> <br>
+                                    By harnessing the power of AI and intuitive design, my goal was to equip users
+                                    with
+                                    a solution that not only enhances efficiency but also fosters genuine
+                                    connections in
+                                    the workplace. <br> <br>
+                                    Ultimately, Bizling was designed to be more than just an app, it's a partner in
+                                    productivity, helping users communicate confidently and effectively in their
+                                    professional endeavors.
+                                </p>
+                            </div>
+                            <br>
+                            <div class="content bgGrey">
+                                <h4>Credits</h4>
+                                <br>
+                                <p>
+                                    For this project, I was a UI/UX Designer who:
+                                </p>
+                                <br>
+                                <ul class="bullet-points">
+                                    <li>Led <span class="highlight">conceptualization</span> and <span
+                                            class="highlight">ideation sessions,</span> generating innovative ideas
+                                        and
+                                        concepts for the Bizling app.</li>
+                                    <li>Conducted comprehensive <span class="highlight"> user research</span>,
+                                        including
+                                        <span class="highlight">surveys, interviews, and usability testing,</span>
+                                        to
+                                        gain insights into the needs and preferences of our target audience.
+                                    </li>
+                                    <li>Created <span class="highlight">detailed personas</span> based on the
+                                        research
+                                        findings, providing a clear understanding of our users' goals, motivations,
+                                        and
+                                        pain points.</li>
+                                    <li>Utilized <span class="highlight">empathy mapping techniques</span> to gain
+                                        deeper insights into the emotions, motivations, and behaviors of our users,
+                                        ensuring a more empathetic and user-centric design approach.</li>
+                                    <li>Crafted both <span class="highlight">low-fidelity</span> and <span
+                                            class="highlight">high-fidelity wireframes,</span> along with <span
+                                            class="highlight">interactive prototypes,</span> to visualize and refine
+                                        the
+                                        user interface and experience.</li>
+                                    <li>Applied creative skills to develop the <span class="highlight">visual
+                                            identity</span> of Bizling, including <span class="highlight">logo
+                                            design</span> and <span class="highlight">branding elements</span> such
+                                        as
+                                        color schemes, typography, and iconography.</li>
+                                    <li>Conducted <span class="highlight">usability testing</span> sessions with
+                                        <span class="highlight">prototypes</span>, gathered feedback from users, and
+                                        iterated on the design based on their insights to ensure a user-centric
+                                        approach.
+                                    </li>
+                                    <li>
+                                        Developed a comprehensive <span class="highlight">Style Guide,</span>
+                                        which provides clear instructions for visual elements like <span
+                                            class="highlight">color palettes</span>,
+                                        <span class="highlight">typgraphy</span> and <span
+                                            class="highlight">iconography</span>, ensuring consitency across Bizling's
+                                        cohesive appearance,
+                                        reinforcing Bizling's brand identity and delivering a unified user experience.
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Personas</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/Bizling/Persona.png" alt="image bizling persona">
+                                </div>
+                                <br>
+                                <p>
+                                    Creating personas was pivotal in guiding my design process for Bizling.
+                                    By developing detailed profiles representing our target users,
+                                    I gained a deep understanding of their goals, needs, and pain points. <br><br>
+
+                                    These personas served as a compass,
+                                    ensuring that every design decision aligned with the preferences and behaviors
+                                    of the intended audience.
+                                    With personas in hand, I was able to empathize with users on a personal level,
+                                    allowing me to tailor the user experience to their specific requirements.
+                                    <br><br>
+
+                                    Ultimately, this approach facilitated the development of a user-centric
+                                    interface
+                                    that resonates with the audience and enhances their communication experience
+                                    with
+                                    Bizling.
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Empathy Map</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/Bizling/Empathy Map.png"
+                                        alt="Image Bizling Empathy Map">
+                                </div>
+                                <br>
+                                <p>
+                                    Utilizing an empathy map proved invaluable
+                                    during the design journey of Bizling. <br><br>
+
+                                    By visually mapping out the thoughts,
+                                    feelings, and motivations of my target users,
+                                    I gained profound insights
+                                    into their emotional landscape. <br><br>
+
+                                    This helped me empathize deeply
+                                    with their experiences and understand
+                                    their perspectives more holistically. <br><br>
+
+                                    By identifying pain points, aspirations
+                                    and influencers, I honed in on key areas
+                                    where Bizling could make a meaningful impact
+                                    on their professional communication challenges. <br><br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Use Case Scenario</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/Bizling/Nutzungsszenario.png"
+                                        alt="Image Bizling use case scenario">
+                                </div>
+                                <br>
+                                <p>
+                                    The usage scenario of Katy, frustrated by an early deadline
+                                    and using Bizling to communicate professionally with her supervisor,
+                                    was pivotal in shaping the development of the app. <br><br>
+
+                                    By identifying such situations during the design process,
+                                    I gained a deeper understanding of the users' needs and challenges. <br><br>
+
+                                    This scenario helped me prioritize creating
+                                    a solution that is not only efficient but also empathetic.
+                                    By assisting Katy in a moment of frustration,
+                                    Bizling ensures that the app not only enhances efficiency
+                                    but also contributes to fostering positive interpersonal
+                                    relationships in the professional environment. <br><br>
+
+                                    Ultimately, this usage scenario guided me
+                                    in developing an app that is not only practical
+                                    but also empathetic, meeting the diverse demands of professional communication.
+                                    <br><br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Scribbles / Wireframes</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/Bizling/Low-Fidelity Wireframes.png"
+                                        alt="Image Bizling scribbles low fidelity wireframes">
+                                </div>
+                                <br>
+                                <p>
+                                    The process of sketching and creating low-fidelity wireframes
+                                    played a crucial role in the design process of Bizling. <br><br>
+
+                                    By quickly scribbling ideas on paper
+                                    and translating them into simple wireframes,
+                                    I was able to explore various design concepts rapidly. <br><br>
+
+                                    This approach facilitated early feedback from stakeholders
+                                    and allowed me to iterate on the design efficiently. <br><br>
+
+                                    Low-fidelity wireframes helped me
+                                    focus on the core functionality and user flow of the app
+                                    without getting bogged down in unnecessary details. <br><br>
+
+                                    Additionally, they served as a blueprint for the UI design,
+                                    guiding the creation of high-fidelity prototypes. <br><br>
+
+                                    Overall, this iterative process of sketching and wireframing
+                                    significantly contributed to the development
+                                    of a user-friendly and intuitive interface for Bizling. <br><br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h5>High-fidelity wireframes (light mode)</h5>
+                                <div class="row">
+                                    <div class="content2">
+                                        <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                            <img class="imgV1"
+                                                src="img/work/Bizling/High-fidelity wireframes light mode 1.png"
+                                                alt="Image Bizling high fidelity wireframes light mode">
+                                        </div>
+                                    </div>
+                                    <div class="content2">
+                                        <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                            <img class="imgV1"
+                                                src="img/work/Bizling/High-fidelity wireframes light mode 2.png"
+                                                alt="Image Bizling high fidelity wireframes light mode 2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>
+                                    High-fidelity wireframes were a game-changer
+                                    in my design process for Bizling. <br><br>
+
+                                    They allowed me to take my initial concepts
+                                    and transform them into polished,
+                                    pixel-perfect representations of the app interface. <br><br>
+
+                                    With these detailed wireframes,
+                                    I could fine-tune every element,
+                                    from color schemes to button placements,
+                                    ensuring a cohesive and user-friendly design. <br><br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h5>High-fidelity wireframes (dark mode)</h5>
+                                <div class="row">
+                                    <div class="content2">
+                                        <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                            <img class="imgV1"
+                                                src="img/work/Bizling/High-fidelity wireframes [dark mode].png"
+                                                alt="Image Bizling high fidelity wireframes dark mode">
+                                        </div>
+                                    </div>
+                                    <div class="content2">
+                                        <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                            <img class="imgV1"
+                                                src="img/work/Bizling/High-fidelity wireframes [dark mode] 2.png"
+                                                alt="Image Bizling high fidelity wireframes dark mode 2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>
+                                    Dark mode design was a key consideration
+                                    in my development of Bizling. <br><br>
+
+                                    I recognized the growing trend
+                                    and user preference for dark interfaces,
+                                    especially in professional settings
+                                    where users often work late hours. <br><br>
+
+                                    Implementing a dark mode option
+                                    not only enhances the aesthetic appeal of the app
+                                    but also reduces eye strain and improves
+                                    readability in low-light environments. <br><br>
+
+                                    My dark mode design incorporates subtle contrasts,
+                                    ensuring that text and elements
+                                    remain easily discernible while maintaining
+                                    a sleek and modern look. <br><br>
+
+                                    By offering this feature, we're empowering users
+                                    to customize their experience
+                                    and cater to their individual preferences,
+                                    ultimately enhancing their overall satisfaction
+                                    with Bizling. <br><br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Prototyping</h4>
+                                <div class="row">
+                                    <div class="content2">
+                                        <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                            <img class="imgV1" src="img/work/Bizling/paper_prototype.png"
+                                                alt="Image Bizling paper prototype click dummy ">
+                                        </div>
+                                    </div>
+                                    <div class="content2">
+                                        <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                            <img class="imgV1" src="img/work/Bizling/Prototype.png"
+                                                alt="Image Bizling high fidelity prototype click dummy">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>
+                                    Prototyping was the secret sauce in bringing Bizling to life! <br><br>
+
+                                    I didn't just dream up ideas; I put them to the test
+                                    with prototypes that let us see our designs in action. <br><br>
+
+                                    From simple paper mockups to interactive digital prototypes,
+                                    I explored different functionalities and user flows,
+                                    refining my design with each iteration. <br><br>
+
+                                    Prototyping wasn't just about making things look pretty;
+                                    it was about making sure they worked seamlessly for the users. <br><br>
+
+                                    By getting hands-on early in the process,
+                                    I could identify and address potential issues
+                                    before they became big problems. <br><br>
+
+                                    With prototyping as my compass,
+                                    I navigated the design journey with confidence,
+                                    knowing that every decision I made was backed
+                                    by real-world testing and user feedback. <br>
+                                </p>
+                                <br>
+                                <div class="row2">
+                                    <div class="content2">
+                                        <!-- Video Prototype -->
+                                        <div class="prototype-mobile2">
+                                            <video class="vid" src="vid/bizling_paper_prototype.m4v" controls loop
+                                                muted contextmenu="false" onclick="toggleFullScreen(this)"></video>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="content2">
+                                        <!-- Video Prototype -->
+                                        <div class="prototype-mobile2">
+                                            <video class="vid" src="vid/bizling_prototype.m4v" controls loop muted
+                                                contextmenu="false" onclick="toggleFullScreen(this)"></video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Styleguide</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/Bizling/Styleguide.png"
+                                        alt="Image Bizling Styleguide">
+                                </div>
+                                <br>
+                                <p>
+                                    Crafting the style guide for Bizling
+                                    was a comprehensive yet engaging process. <br><br>
+
+                                    It involved precisely defining the brand's
+                                    visual identity to resonate effectively
+                                    with our target audience. <br><br>
+
+                                    Every aspect, from color palettes to typography choices,
+                                    was thoughtfully curated to embody professionalism and clarity. <br><br>
+
+                                    With a focus on consistency and coherence,
+                                    the style guide serves as a roadmap for design teams,
+                                    ensuring that every facet of Bizling's interface
+                                    exudes reliability and sophistication. <br><br>
+
+                                    It's not just about aesthetics;
+                                    it's about creating an immersive experience
+                                    that is easy to navigate and instills confidence to the user. <br><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="toggle-link" class="toggle-link toggle-link3 scrollElement"
+                        onclick="toggleContent3()">&#8594;
+                        show_more_</span>
+                </div>
+
+                <!------------- Projekt 3 MitVergnügen ------------------>
+                <div class="card">
+                    <div class="hidden-content" id="hiddenContent4">
+                        <h3>MitVergnügen App</h3>
+                        <br>
+                        <!-- Bilder Karussel Projekt1 -->
+                        <div id="" class="projekt3-gallery scrollElement" onclick="toggleFullScreen(this)">
+                            <!-- Bild No 1 mit class: slide (für slider-Funktion) und class: current-image (damit dieses Bild von Anfang an angezeigt wird) -->
+                            <div class="projekt3-slide projekt2-current-image">
+                                <img src="img/work/MitVergnügenApp/Cover.png"
+                                    alt="Image Mit Vergnügen App Design Idee Cover">
+                            </div>
+                            <!-- Bild No 2 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt3-slide">
+                                <img src="img/work/MitVergnügenApp/2 - Persona.png"
+                                    alt="Image Mit Vergnügen App Design Idee Persona">
+                            </div>
+                            <!-- Bild No 3 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt3-slide">
+                                <img src="img/work/MitVergnügenApp/3 - Empathy Map.png"
+                                    alt="Image Mit Vergnügen App Design Idee Empathy Map">
+                            </div>
+                            <!-- Bild No 4 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt3-slide">
+                                <img src="img/work/MitVergnügenApp/4 - Customer Journey Map.png"
+                                    alt="Image Mit Vergnügen App Design Idee Customer Journey Map">
+                            </div>
+                            <!-- Bild No 5 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt3-slide">
+                                <img src="img/work/MitVergnügenApp/5 - Task Flow.png"
+                                    alt="Image MIt Vergnügen App Design Idee Customer Journey Map">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt3-slide">
+                                <img src="img/work/MitVergnügenApp/6 - Wireframes.png"
+                                    alt="Image Mit Vergnügen App Design Idee Wireframes">
+                            </div>
+                            <!-- Bild No 6 mit class: slide (für slider-Funktion) -->
+                            <div class="projekt3-slide">
+                                <img src="img/work/MitVergnügenApp/7 - User Interface Design.png"
+                                    alt="Image Mit Vergnügen App Design Idee User Interface Design">
+                            </div>
+                            <!-- Button = schaltet auf das vorherige Bild -->
+                            <button class="projekt3-prev" onclick="previousImage(event)">&#x25C2;</button>
+                            <!-- Button = schaltet auf das nächste Bild -->
+                            <button class="projekt3-next" onclick="nextImage(event)">&#x25C2</button>
+                        </div>
+                        <br><br>
+                        <hr>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Overview</h4>
+                                <br>
+                                <p>
+                                    This project emerged within the context of my ongoing training in UI/UX design,
+                                    serving as an exercise to translate the design concept of the "Mit Vergnügen"
+                                    Berlin online city magazine website into a mobile app interface. <br><br>
+
+                                    Leveraging my skills in Sketch, I crafted a mobile design that captures
+                                    the essence of the website while optimizing it for mobile interaction.
+                                    By curating iconography and imagery from the website,
+                                    I aimed to maintain brand consistency and enhance the user experience.<br>
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Objective</h4>
+                                <br>
+                                <p>
+                                    Through this project, my goal was to demonstrate my proficiency in UI/UX design
+                                    by adapting the design language of the "Mit Vergnügen" Berlin online city magazine
+                                    website
+                                    into a mobile app interface. <br> <br>
+                                    Utilizing Sketch, I aimed to showcase my ability
+                                    to seamlessly translate web design concepts to mobile platforms,
+                                    emphasizing user-centricity and brand consistency. <br> <br>
+                                    Please note that while this project is a conceptual exercise
+                                    undertaken during my training, it highlights my strategic approach
+                                    to UI/UX design and my commitment
+                                    to delivering engaging and intuitive user experiences.<br> <br>
+                                </p>
+                            </div>
+                            <br>
+                            <div class="content bgGrey">
+                                <h4>Credits</h4>
+                                <br>
+                                <p>
+                                    In this project, I took responsibility for various aspects
+                                    including <span class="highlight">the app icon design, persona development,
+                                        empathy map creation, customer journey mapping,
+                                        task flow analysis, wireframing, and user interface design.</span> <br><br>
+
+                                    Utilizing Sketch as my primary tool,
+                                    I meticulously crafted each element
+                                    to ensure a cohesive and engaging user experience. <br><br>
+
+                                    While this project remains a conceptual exercise
+                                    within the context of my UI/UX design training,
+                                    it reflects my dedication to mastering the craft
+                                    and delivering exceptional design solutions. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Personas</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/MitVergnügenApp/2 - Persona.png"
+                                        alt="image Mit Vergnügen Personas">
+                                </div>
+                                <br>
+                                <p>
+                                    Crafting user personas played a pivotal role in this project,
+                                    allowing me to immerse myself in the mindset of potential users
+                                    and customize the app interface accordingly. <br><br>
+                                    Through thorough research and analysis,
+                                    I developed personas that encapsulated
+                                    a spectrum of user demographics,
+                                    ensuring the app design resonated
+                                    with various preferences and behaviors. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Empathy Map</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/MitVergnügenApp/3 - Empathy Map.png"
+                                        alt="Image Mit Vergnügen Empathy Map">
+                                </div>
+                                <br>
+                                <p>
+                                    Constructing empathy maps was instrumental
+                                    in gaining a deeper understanding of users' emotions,
+                                    motivations, and pain points throughout
+                                    their interaction with the app. <br><br>
+
+                                    By visually mapping out their thoughts, feelings
+                                    and experiences, I was able to empathize with users
+                                    on a profound level, informing design decisions
+                                    aimed at enhancing their overall satisfaction and engagement. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Customer Journey Map</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/MitVergnügenApp/4 - Customer Journey Map.png"
+                                        alt="Image Mit Vergnügen Customer Journey Map">
+                                </div>
+                                <br>
+                                <p>
+                                    Creating a customer journey map was essential
+                                    in visualizing the entire user experience,
+                                    from initial interaction with the app to achieving their goals. <br><br>
+
+                                    This process allowed me to identify key touchpoints
+                                    and potential pain points along the user journey,
+                                    enabling me to optimize the app interface
+                                    for a seamless and satisfying user experience at every stage. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Usage Scenario and Task Flow</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/MitVergnügenApp/5 - Task Flow.png"
+                                        alt="Image Mit Vergnügen Usage Scenario and Task Flow">
+                                </div>
+                                <br>
+                                <p>
+                                    By crafting usage scenarios and task flows,
+                                    I honed in on typical application cases within the app
+                                    and refined the flow of user interactions. <br><br>
+
+                                    Defining clear steps users take to accomplish their goals
+                                    ensured the app's ease of use and efficiency. <br><br>
+
+                                    This approach allowed for targeted enhancements to the user experience,
+                                    aligning design with user needs and expectations. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h5>Low-Fidelity and User Interface Design</h5>
+                                <div class="row">
+                                    <div class="content2">
+                                        <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                            <img class="imgV1" src="img/work/MitVergnügenApp/6 - Wireframes.png"
+                                                alt="Image Mit Vergnügen low-fidelity Wireframes">
+                                        </div>
+                                    </div>
+                                    <div class="content2">
+                                        <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                            <img class="imgV1"
+                                                src="img/work/MitVergnügenApp/7 - User Interface Design.png"
+                                                alt="Image Mit Vergnügen High-Fidelity Wireframes User Interface Design">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>
+                                    From low-fidelity wireframes,
+                                    which provided a rough blueprint of the app's layout and functionality,
+                                    to high-fidelity wireframes that detailed precise visual elements and interactions,
+                                    I navigated through various stages of design iteration. <br><br>
+
+                                    Low-fidelity wireframes allowed for rapid prototyping
+                                    and early feedback gathering, while high-fidelity wireframes
+                                    polished the design to reflect the final product's look and feel. <br><br>
+
+                                    This iterative process ensured a thorough exploration
+                                    of design possibilities and a refined user interface
+                                    that seamlessly guided users through the app's features. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="contentContainer">
+                            <div class="content bgGrey">
+                                <h4>Summary</h4>
+                                <div class="imgContainer1 scrollElement" onclick="toggleFullScreen(this)">
+                                    <img class="imgV1" src="img/work/MitVergnügenApp/1 - Cover.png"
+                                        alt="Image Mit Vergnügen Cover">
+                                </div>
+                                <br>
+                                <p>
+                                    In summary, the synthesis of user personas, empathy maps,
+                                    customer journey maps, and task flows informed the creation
+                                    of both low-fidelity and high-fidelity wireframes. <br><br>
+
+                                    These wireframes, developed through iterative design processes,
+                                    ultimately converged into a coherent user interface design. <br><br>
+
+                                    By aligning every design decision with user needs and expectations,
+                                    I ensured that the interface not only met functional requirements
+                                    but also provided an intuitive and engaging experience for users. <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="toggle-link" class="toggle-link toggle-link4 scrollElement"
+                        onclick="toggleContent4()">&#8594;
+                        show_more_</span>
+                </div>
+
+                <!-- Ankerpunkt für navigation oben ab tablet-size und größer -->
+                <div id="navsec4"></div>
+            </div>
+        </section>
+
+        <!--  --  SECTION 4 CONTACT  --  -->
+        <section id="contact" class="page bgGrey">
+            <div class="contact-container">
+                <h2 class="form-title">Curious?</h2>
+                <form action="send_email.php" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" id="submit-btn">
+                        <span class="btn-text">
+                            <p>
+                                send a message ! &nbsp; send a message ! &nbsp; send a message ! &nbsp; send a message !
+                                &nbsp; send a message ! &nbsp; send a message ! &nbsp; send a message ! &nbsp; send a
+                                message ! &nbsp; send a message ! &nbsp;
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!--  --  FOOTER  --  -->
+        <footer id="footer" class="footer">
+            <hr>
+            <!-- Box für footer links -->
+            <div class="footer-links">
+                <!-- Logo -->
+                <div id="footer-logo">
+                    <!--  --  Link mit Logo führt zum Seitenanfang und die Seite neu lädt --  -->
+                    <a href="#" onclick="window.location.reload(true);"><img src="img/LB - Black 25mm.png"
+                            onmouseover="this.src='img/LB - White 10mm.png'"
+                            onmouseout="this.src='img/LB - Black 25mm.png'" alt="Leonard Betz Logo"
+                            class="footer-logo"></a>
+                </div>
+                <!-- Social-Buttons -->
+                <div id="social" class="">
+                    <!-- Button 1 link + img + onmouseover + onmouseout-->
+                    <a href="https://www.linkedin.com/"><img src="img/linkedin.png"
+                            onmouseover="this.src='img/linkedinwhite.png'" onmouseout="this.src='img/linkedin.png'"
+                            alt="linkedin" class="social-link"></a>
+                    <!-- Button 2 link + img + onmouseover + onmouseout -->
+                    <!-- <a href="https://www.instagram.com/"><img src="img/instagram.png"
+                        onmouseover="this.src='img/instagramwhite.png'" onmouseout="this.src='img/instagram.png'"
+                        alt="instagram" class="social-link"></a> -->
+                </div>
+            </div>
+            <hr>
+            <div class="stuff-box">
+                <!-- Impressum -->
+                <div class="imprint-link">
+                    <a href="imprint.html" class="intern-link">Imprint</a>
+                </div>
+
+                <!--  Copyright Text  -->
+                <div id="copy-text" class="">
+                    <p>&copy; 2024 Leonard Betz. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

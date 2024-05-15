@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+
+<body>
+        <!-- --   HEADER  --  -->
+        <header id="header" class="header visible">
+            <!-- Noise-Effekt -->
+            <!-- <div class="noise-layer"></div> -->
+            <!--  -- Box für Logo zieht sich über die Hälfte der Navigation --  -->
+            <div class="logocontainer">
+                <div id="logo" class="">
+                    <!--  --  Link mit Logo führt zum Seitenanfang und die Seite neu lädt --  -->
+                    <a href="index.html" onclick="window.location.reload(true);"><img src="img/LB - Black 25mm.png"
+                            alt="Logo"></a>
+                </div>
+            </div>
+            <!--  --  Section für Menu + Burger-Button  --  -->
+            <div class="menuContainer">
+                <div id="menu" class="">
+                    <!--  --  Box für Burger-Button + Menu in Tabletsize und größer --  -->
+                    <div id="burger-menu" class="">
+                        <!--  -- Burger-Button  --  -->
+                        <div id="burger-button" class="">
+                            <img src="img/burger-cold steel.png" alt="">
+                        </div>
+                        <!--  --  Menu Links für Tabletsize und größer  --  -->
+                        <nav id="menu-links" class="hidden">
+                            <!--  --  Link zur about-section -->
+                            <a href="index.html#navsec2" id="bl-about" class=""
+                                onclick="window.location.reload(true);">ABOUT_</a>
+                            <!--  --  Link zur work-section  --  -->
+                            <a href="index.html#navsec3" id="bl-work" class=""
+                                onclick="window.location.reload(true);">WORK_</a>
+                            <!--  --  Link zur contact-section  --  -->
+                            <a href="index.html#navsec4" id="bl-contact" class=""
+                                onclick="window.location.reload(true);">CONTACT_</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--  --  Section für das mobile-menu (wird angezeigt wenn man auf Burger-Button klickt)  --  -->
+            <div id="mobile-menu" class="origin animate-open-menu hidden">
+                <!--  --  Button um das Burger-Menu zu schließen  --  -->
+                <a href id="escape-button" class="">
+                    X
+                </a>
+                <!--  --  Menu für mobile-links  --  -->
+                <nav id="mobile-links">
+                    <!--  --  Link zum Seitenanfang  --  -->
+                    <a href="index.html" id="ml-home" class="ml-link" onclick="window.location.reload(true);">HOME_</a>
+                    <!--  --  Link zur about-section  --  -->
+                    <a href="index.html#navsec2" id="ml-about" class="ml-link" onclick="window.location.reload(true);">ABOUT_</a>
+                    <!--  --  Link zur work-section  --  -->
+                    <a href="index.html#navsec3" id="ml-work" class="ml-link" onclick="window.location.reload(true);">WORK_</a>
+                    <!--  --  Link zur contact-section  --  -->
+                    <a href="index.html#navsec4" id="ml-contact" class="ml-link"
+                        onclick="window.location.reload(true);">CONTACT_</a>
+                </nav>
+            </div>
+        </header>
+    <main>
+        <body class="imprint-page">
+            <div class="imprint">
+                <h2>Impressum</h2>
+                <br>
+            <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+            <p>Leonard Betz<br>
+                Bahnhofstraße 5<br>
+                13055 Berlin</p>
+                <br>
+            <p><strong>Kontakt:</strong><br>
+                E-Mail: <a href="mailto:leonard.betz@gmx.de" class="intern-link">leonard.betz@gmx.de</a></p>
+                <br>
+            <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
+                Leonard Betz<br>
+                Bahnhofstraße 5<br>
+                13055 Berlin</p>
+            </div>
+        </body>
+    </main>
+        <!--  --  FOOTER  --  -->
+        <footer id="footer" class="footer">
+            <hr>
+            <!-- Box für footer links -->
+            <div class="footer-links">
+                <!-- Logo -->
+                <div id="footer-logo">
+                    <!--  --  Link mit Logo führt zum Seitenanfang und die Seite neu lädt --  -->
+                    <a href="#" onclick="window.location.reload(true);"><img src="img/LB - Black 25mm.png"
+                            onmouseover="this.src='img/LB - White 10mm.png'"
+                            onmouseout="this.src='img/LB - Black 25mm.png'" alt="Leonard Betz Logo"
+                            class="footer-logo"></a>
+                </div>
+                <!-- Social-Buttons -->
+                <div id="social" class="">
+                    <!-- Button 1 link + img + onmouseover + onmouseout-->
+                    <a href="https://www.linkedin.com/"><img src="img/linkedin.png"
+                            onmouseover="this.src='img/linkedinwhite.png'" onmouseout="this.src='img/linkedin.png'"
+                            alt="linkedin" class="social-link"></a>
+                    <!-- Button 2 link + img + onmouseover + onmouseout -->
+                    <!-- <a href="https://www.instagram.com/"><img src="img/instagram.png"
+                        onmouseover="this.src='img/instagramwhite.png'" onmouseout="this.src='img/instagram.png'"
+                        alt="instagram" class="social-link"></a> -->
+                </div>
+            </div>
+            <hr>
+            <div class="stuff-box">
+                <!-- Impressum -->
+                <div class="imprint-link">
+                    <a href="imprint.html" class="intern-link">Imprint</a>
+                </div>
+
+                <!--  Copyright Text  -->
+                <div id="copy-text" class="">
+                    <p>&copy; 2024 Leonard Betz. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

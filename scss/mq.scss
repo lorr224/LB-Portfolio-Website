@@ -1,0 +1,16 @@
+// mixin für media-querie tablet-size (dadurch lassen sich angaben machen, die erst eintreten wenn der viewport die angegebene Größe erreicht)
+@mixin tablet{
+    @media (min-width: 760px) { @content; }
+}
+// mixin für media-querie notebook-size (dadurch lassen sich angaben machen, die erst eintreten wenn der viewport die angegebene Größe erreicht)
+@mixin notebook{
+    @media (min-width: 1024px) { @content; }
+}
+// mixin für media-querie desktop-size (dadurch lassen sich angaben machen, die erst eintreten wenn der viewport die angegebene Größe erreicht)
+@mixin desktop{
+    @media (min-width: 1440px) { @content; }
+}
+// mixin für media-querie big-size (dadurch lassen sich angaben machen, die erst eintreten wenn der viewport die angegebene Größe erreicht)
+@mixin big{
+    @media (min-width: 1920px) { @content; }
+}
