@@ -1697,9 +1697,9 @@ footer.visible {
   transition: 0.2s ease-in-out;
   /* Verwendung von ease-in-out für Hover-Effekte */
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contact-container .btn-submit {
-    width: 13.3rem;
+    width: 13.8rem;
   }
 }
 .contact-container .btn-text {
