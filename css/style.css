@@ -456,16 +456,16 @@ footer.visible {
           backdrop-filter: blur(2px);
   border-radius: 0.9rem;
   z-index: 8;
-  margin-left: 10%;
   padding-top: 1rem;
   padding-left: 1rem;
   padding-bottom: 1rem;
-  width: 80%;
+  width: 22rem;
   box-shadow: 2px 2px 10px -10px #eff5fc;
-  align-self: flex-start;
 }
 @media (min-width: 1024px) {
   #home #welcome-text-box .intro-box {
+    margin-left: 10%;
+    align-self: flex-start;
     width: 18.5rem;
   }
 }
