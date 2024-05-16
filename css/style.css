@@ -1724,7 +1724,12 @@ footer.visible {
 }
 @media (min-width: 740px) {
   .contact-container .btn-submit {
-    width: 13rem;
+    width: 13.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-container .btn-submit {
+    width: 13.8rem;
   }
 }
 .contact-container .btn-text {
@@ -1746,9 +1751,7 @@ footer.visible {
     transform: translateX(-800%);
   }
 }
-.contact-container .btn-submit:hover,
-.contact-container .btn-submit:focus,
-.contact-container .btn-submit:active {
+.contact-container .btn-submit:hover {
   border-radius: 50%/50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
