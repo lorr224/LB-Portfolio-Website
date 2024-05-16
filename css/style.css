@@ -14,6 +14,16 @@ html {
   margin-bottom: 8rem;
   /* Optional: Adding some additional styles */
 }
+@media (min-width: 440px) {
+  html {
+    margin-bottom: 16rem;
+  }
+}
+@media (min-width: 740px) {
+  html {
+    margin-bottom: 8rem;
+  }
+}
 @media (min-width: 1024px) {
   html {
     font-size: 1.5rem;
