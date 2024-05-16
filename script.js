@@ -544,7 +544,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const backToWork = document.querySelector('.backtowork');
     const workSection = document.getElementById('work');
     const header = document.getElementById('header');
-    const footer = document.getElementById('footer');
+    // const footer = document.getElementById('footer');
 
     if (!header) {
         console.error('Header element not found');
@@ -587,21 +587,21 @@ document.addEventListener("DOMContentLoaded", function () {
             header.style.top = "-8vh";
         }
 
-        // // Control footer behavior
-        if (documentHeight <= viewportHeight) {
-            // If the document height is less than or equal to viewport height,
-            // show the footer by default
-            footer.style.bottom = "0";
-            isFooterVisible = true;
-        } else if (currentScrollPos + window.innerHeight >= documentHeight) {
-            // If the user has scrolled to the bottom of the page, show the footer
-            footer.style.bottom = "0";
-            isFooterVisible = true;
-        } else if (prevScrollPos > currentScrollPos && isFooterVisible) {
-            // If the user scrolls up and the footer is visible, hide it
-            footer.style.bottom = "-8rem";
-            isFooterVisible = false;
-        }
+        // // // Control footer behavior
+        // if (documentHeight <= viewportHeight) {
+        //     // If the document height is less than or equal to viewport height,
+        //     // show the footer by default
+        //     footer.style.bottom = "0";
+        //     isFooterVisible = true;
+        // } else if (currentScrollPos + window.innerHeight >= documentHeight) {
+        //     // If the user has scrolled to the bottom of the page, show the footer
+        //     footer.style.bottom = "0";
+        //     isFooterVisible = true;
+        // } else if (prevScrollPos > currentScrollPos && isFooterVisible) {
+        //     // If the user scrolls up and the footer is visible, hide it
+        //     footer.style.bottom = "-8rem";
+        //     isFooterVisible = false;
+        // }
 
         // Show/hide "backtowork" button
         if (workSection) {
