@@ -1722,6 +1722,11 @@ footer.visible {
     width: 13.8rem;
   }
 }
+@media (min-width: 740px) {
+  .contact-container .btn-submit {
+    width: 13rem;
+  }
+}
 .contact-container .btn-text {
   position: absolute;
   left: 5%;

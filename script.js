@@ -523,6 +523,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Swipe-Unterstützung hinzufügen
     hammer.on('swipeleft', nextImage);
     hammer.on('swiperight', previousImage);
+
+    // Initialisiere die Anzeige des ersten Bildes
+    showSlide(0);
 });
 
 // ------------- Scroll-Funktionen -----------------
@@ -657,16 +660,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //  Script für Submuit-Button
 document.addEventListener("DOMContentLoaded", function () {
-    const submitBtn = document.getElementById('submit-btn');
+    // Check if the device supports touch events
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
 
-    submitBtn.addEventListener('mouseenter', function () {
-        submitBtn.querySelector('.btn-text').style.animation = 'slide-text 16s linear infinite'; // nur Text animieren
-    });
+    // Only add the hover event listeners if it's not a touch device
+    if (!isTouchDevice) {
+        const submitBtn = document.getElementById('submit-btn');
 
-    submitBtn.addEventListener('mouseleave', function () {
-        submitBtn.querySelector('.btn-text').style.animation = 'none';
-    });
+        submitBtn.addEventListener('mouseenter', function () {
+            submitBtn.querySelector('.btn-text').style.animation = 'slide-text 16s linear infinite'; // nur Text animieren
+        });
+
+        submitBtn.addEventListener('mouseleave', function () {
+            submitBtn.querySelector('.btn-text').style.animation = 'none';
+        });
+    }
 });
+
 
 
 
