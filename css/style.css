@@ -1731,7 +1731,7 @@ footer.visible {
 }
 @media (min-width: 1024px) {
   .contact-container .btn-submit {
-    width: 12rem;
+    width: 13.7rem;
   }
 }
 .contact-container .btn-text {
@@ -1837,6 +1837,19 @@ footer .stuff-box {
     margin-top: 0.5rem;
     gap: 0.5rem;
   }
+}
+footer .stuff-box .imprint-link {
+  text-decoration: none;
+  color: #a5a5a5;
+  font-size: 0.9rem;
+  pointer-events: visible;
+  /* sorgt dafür, dass button klickbar ist */
+}
+footer .stuff-box .imprint-link:hover,
+footer .stuff-box .imprint-link:focus,
+footer .stuff-box .imprint-link:active {
+  filter: brightness(110%);
+  /* Hinzufügen eines leichten Bloom-Effekts beim Hover */
 }
 
 .imprint-page {
