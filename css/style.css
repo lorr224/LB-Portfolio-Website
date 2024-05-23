@@ -770,9 +770,7 @@ footer.visible {
   box-shadow: 4px 4px 18px -12px #212020;
   /* Horizontale Verschiebung, Vertikale Verschiebung, Weichzeichnen, Spread, Farbe */
 }
-#about .about-content #text-box .toggle-link1:hover,
-#about .about-content #text-box .toggle-link1:focus,
-#about .about-content #text-box .toggle-link1:active {
+#about .about-content #text-box .toggle-link1:hover {
   border-radius: 50%/50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1132,9 +1130,7 @@ footer.visible {
   box-shadow: 4px 4px 18px -12px #eff5fc;
   /* Horizontale Verschiebung, Vertikale Verschiebung, Weichzeichnen, Spread, Farbe */
 }
-#work .work-content .toggle-link3:hover,
-#work .work-content .toggle-link3:focus,
-#work .work-content .toggle-link3:active {
+#work .work-content .toggle-link3:hover {
   border-radius: 50%/50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1161,9 +1157,7 @@ footer.visible {
   box-shadow: 4px 4px 18px -12px #eff5fc;
   /* Horizontale Verschiebung, Vertikale Verschiebung, Weichzeichnen, Spread, Farbe */
 }
-#work .work-content .toggle-link4:hover,
-#work .work-content .toggle-link4:focus,
-#work .work-content .toggle-link4:active {
+#work .work-content .toggle-link4:hover {
   border-radius: 50%/50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
