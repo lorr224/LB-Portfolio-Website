@@ -658,24 +658,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//  Script für Submuit-Button
 document.addEventListener("DOMContentLoaded", function () {
     // Check if the device supports touch events
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
 
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = submitBtn.querySelector('.btn-text');
+
     // Only add the hover event listeners if it's not a touch device
     if (!isTouchDevice) {
-        const submitBtn = document.getElementById('submit-btn');
-
         submitBtn.addEventListener('mouseenter', function () {
-            submitBtn.querySelector('.btn-text').style.animation = 'slide-text 16s linear infinite'; // nur Text animieren
+            btnText.style.animation = 'slide-text 16s linear infinite'; // nur Text animieren
         });
 
         submitBtn.addEventListener('mouseleave', function () {
-            submitBtn.querySelector('.btn-text').style.animation = 'none';
+            btnText.style.animation = 'none';
         });
+    } else {
+        // Apply the animation by default on touch devices
+        btnText.style.animation = 'slide-text 16s linear infinite';
     }
 });
+
 
 
 
