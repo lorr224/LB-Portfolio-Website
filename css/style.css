@@ -65,6 +65,8 @@ header.visible {
 footer.visible {
   position: sticky;
   display: flex;
+  margin-bottom: -8rem;
+  bottom: 0;
 }
 
 #borderMorphcontainer {
@@ -1846,8 +1848,7 @@ footer .stuff-box {
   height: 60vh;
   width: 100%;
   padding: 5%;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 8rem;
 }
 @media (min-width: 740px) {
   .imprint {
