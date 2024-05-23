@@ -1726,12 +1726,12 @@ footer.visible {
 }
 @media (min-width: 740px) {
   .contact-container .btn-submit {
-    width: 13.8rem;
+    width: 13rem;
   }
 }
 @media (min-width: 1024px) {
   .contact-container .btn-submit {
-    width: 13.8rem;
+    width: 13rem;
   }
 }
 .contact-container .btn-text {
