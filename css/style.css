@@ -770,7 +770,9 @@ footer.visible {
   box-shadow: 4px 4px 18px -12px #212020;
   /* Horizontale Verschiebung, Vertikale Verschiebung, Weichzeichnen, Spread, Farbe */
 }
-#about .about-content #text-box .toggle-link1:hover {
+#about .about-content #text-box .toggle-link1:hover,
+#about .about-content #text-box .toggle-link1:focus,
+#about .about-content #text-box .toggle-link1:active {
   border-radius: 50%/50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -782,17 +784,6 @@ footer.visible {
   /* Hier kannst du den gewünschten Unschärfeeffekt einstellen */
   transition: 0.2s ease-in-out;
   /* Verwendung von ease-in-out für Hover-Effekte */
-}
-@media (hover: none) and (pointer: coarse) {
-  #about .about-content #text-box .toggle-link1:hover {
-    border-radius: initial;
-    padding-top: initial;
-    padding-bottom: initial;
-    background: initial;
-    -webkit-backdrop-filter: initial;
-            backdrop-filter: initial;
-    transition: initial;
-  }
 }
 
 #work {
@@ -1112,7 +1103,9 @@ footer.visible {
   /* Horizontale Verschiebung, Vertikale Verschiebung, Weichzeichnen, Spread, Farbe */
   box-shadow: 4px 4px 18px -12px #eff5fc;
 }
-#work .work-content .toggle-link2:hover {
+#work .work-content .toggle-link2:hover,
+#work .work-content .toggle-link2:focus,
+#work .work-content .toggle-link2:active {
   border-radius: 50%/50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1124,17 +1117,6 @@ footer.visible {
           backdrop-filter: blur(1px);
   transition: 0.2s ease-in-out;
   /* Verwendung von ease-in-out für Hover-Effekte */
-}
-@media (hover: none) and (pointer: coarse) {
-  #work .work-content .toggle-link2:hover .toggle-link2:hover {
-    border-radius: initial;
-    padding-top: initial;
-    padding-bottom: initial;
-    background: initial;
-    -webkit-backdrop-filter: initial;
-            backdrop-filter: initial;
-    transition: initial;
-  }
 }
 #work .work-content .toggle-link3 {
   width: -moz-fit-content;
@@ -1150,7 +1132,9 @@ footer.visible {
   box-shadow: 4px 4px 18px -12px #eff5fc;
   /* Horizontale Verschiebung, Vertikale Verschiebung, Weichzeichnen, Spread, Farbe */
 }
-#work .work-content .toggle-link3:hover {
+#work .work-content .toggle-link3:hover,
+#work .work-content .toggle-link3:focus,
+#work .work-content .toggle-link3:active {
   border-radius: 50%/50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1162,17 +1146,6 @@ footer.visible {
           backdrop-filter: blur(1px);
   transition: 0.2s ease-in-out;
   /* Verwendung von ease-in-out für Hover-Effekte */
-}
-@media (hover: none) and (pointer: coarse) {
-  #work .work-content .toggle-link3:hover {
-    border-radius: initial;
-    padding-top: initial;
-    padding-bottom: initial;
-    background: initial;
-    -webkit-backdrop-filter: initial;
-            backdrop-filter: initial;
-    transition: initial;
-  }
 }
 #work .work-content .toggle-link4 {
   width: -moz-fit-content;
@@ -1188,7 +1161,9 @@ footer.visible {
   box-shadow: 4px 4px 18px -12px #eff5fc;
   /* Horizontale Verschiebung, Vertikale Verschiebung, Weichzeichnen, Spread, Farbe */
 }
-#work .work-content .toggle-link4:hover {
+#work .work-content .toggle-link4:hover,
+#work .work-content .toggle-link4:focus,
+#work .work-content .toggle-link4:active {
   border-radius: 50%/50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1200,17 +1175,6 @@ footer.visible {
           backdrop-filter: blur(1px);
   transition: 0.2s ease-in-out;
   /* Verwendung von ease-in-out für Hover-Effekte */
-}
-@media (hover: none) and (pointer: coarse) {
-  #work .work-content .toggle-link4:hover {
-    border-radius: initial;
-    padding-top: initial;
-    padding-bottom: initial;
-    background: initial;
-    -webkit-backdrop-filter: initial;
-            backdrop-filter: initial;
-    transition: initial;
-  }
 }
 #work .work-content .hidden-content.expanded {
   max-height: -moz-fit-content;
@@ -1799,19 +1763,6 @@ footer.visible {
   font-weight: bold;
   font-size: 2rem;
   text-transform: uppercase;
-}
-@media (hover: none) and (pointer: coarse) {
-  .contact-container .btn-submitt:hover {
-    border-radius: initial;
-    padding-top: initial;
-    padding-bottom: initial;
-    background: initial;
-    -webkit-backdrop-filter: initial;
-            backdrop-filter: initial;
-    font-weight: initial;
-    font-size: initial;
-    text-transform: initial;
-  }
 }
 
 footer {
