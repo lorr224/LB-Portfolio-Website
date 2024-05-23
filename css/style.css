@@ -1843,13 +1843,16 @@ footer .stuff-box {
 }
 
 .imprint {
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   padding: 5%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 @media (min-width: 740px) {
   .imprint {
-    height: 80vh;
+    height: 70vh;
+    margin-top: 4rem;
   }
 }
 @media (min-width: 1024px) {
