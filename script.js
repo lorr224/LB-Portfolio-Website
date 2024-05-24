@@ -680,8 +680,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+//  Script für Contact Formular E-Mail formspree
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
+    var form = event.target;
+    var formData = new FormData(form);
 
+    fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Nachricht gesendet!');
+            form.reset();
+        } else {
+            alert('Fehler beim Senden der Nachricht.');
+        }
+    }).catch(error => {
+        alert('Fehler beim Senden der Nachricht.');
+    });
+});
 
 
 
