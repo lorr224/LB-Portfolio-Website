@@ -1215,7 +1215,12 @@ footer.visible {
 }
 #work .work-content .pic2 {
   display: flex;
-  height: 16rem;
+  height: 12rem;
+}
+@media (min-width: 440px) {
+  #work .work-content .pic2 {
+    height: 12rem;
+  }
 }
 @media (min-width: 740px) {
   #work .work-content .pic2 {
