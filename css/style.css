@@ -1183,7 +1183,7 @@ footer.visible {
 }
 #work .work-content .pic {
   display: flex;
-  height: 14rem;
+  height: 10rem;
 }
 @media (min-width: 440px) {
   #work .work-content .pic {
