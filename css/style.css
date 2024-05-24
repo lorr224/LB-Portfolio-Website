@@ -1183,11 +1183,11 @@ footer.visible {
 }
 #work .work-content .pic {
   display: flex;
-  height: 12rem;
+  height: 11rem;
 }
 @media (min-width: 440px) {
   #work .work-content .pic {
-    height: 12rem;
+    height: 11rem;
   }
 }
 @media (min-width: 740px) {
