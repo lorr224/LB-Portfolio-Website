@@ -4,7 +4,7 @@ if(isset($_POST['submit'])) {
     $email = $_POST['email'];
     $message = $_POST['message'];
     
-    $to = "leonard.betz@gmx.de";
+    $to = "hello@leobetz.com";
     $subject = "Kontaktformular Nachricht von $name";
     $message = "Name: $name\nEmail: $email\n\n$message";
     
@@ -12,6 +12,6 @@ if(isset($_POST['submit'])) {
     mail($to, $subject, $message);
     
     // Weiterleitung nach dem Senden
-    header("Location: danke.html");
+    header("Location: index.html");
 }
 ?>

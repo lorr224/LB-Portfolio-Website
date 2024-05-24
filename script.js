@@ -342,7 +342,7 @@ function toggleContent1() {
 
     // Führe die Scroll-Aktion nach Abschluss der Toggle-Animation aus
     setTimeout(function () {
-        scrollToSection(contentExpanded1 ? 'navsec0' : 'navsec2');
+        scrollToSection(contentExpanded1 ? 'navsec0' : 'aboutSection');
     }, 0);
 }
 
@@ -360,7 +360,7 @@ function toggleContent2() {
 
     // Führe die Scroll-Aktion nach Abschluss der Toggle-Animation aus
     setTimeout(function () {
-        scrollToSection(contentExpanded2 ? 'navsec0' : 'navsec3');
+        scrollToSection(contentExpanded2 ? 'navsec0' : 'workSection');
     }, 0);
 }
 
@@ -378,7 +378,7 @@ function toggleContent3() {
 
     // Führe die Scroll-Aktion nach Abschluss der Toggle-Animation aus
     setTimeout(function () {
-        scrollToSection(contentExpanded3 ? 'navsec0' : 'navsec3');
+        scrollToSection(contentExpanded3 ? 'navsec0' : 'workSection');
     }, 0);
 }
 
@@ -396,7 +396,7 @@ function toggleContent4() {
 
     // Führe die Scroll-Aktion nach Abschluss der Toggle-Animation aus
     setTimeout(function () {
-        scrollToSection(contentExpanded3 ? 'navsec0' : 'navsec3');
+        scrollToSection(contentExpanded3 ? 'navsec0' : 'workSection');
     }, 0);
 }
 

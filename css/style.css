@@ -157,7 +157,15 @@ footer.visible {
   transform: scale(0.5);
 }
 
-#navsec2 {
+#aboutSection {
+  position: absolute;
+  top: -8vh;
+  height: 8vh;
+  width: 100%;
+  z-index: 100;
+}
+
+#workSection {
   position: absolute;
   top: 0;
   height: 8vh;
@@ -165,15 +173,7 @@ footer.visible {
   z-index: 100;
 }
 
-#navsec3 {
-  position: absolute;
-  top: 0;
-  height: 8vh;
-  width: 100%;
-  z-index: 100;
-}
-
-#navsec4 {
+#contactSection {
   position: absolute;
   bottom: 0;
   height: 8vh;
