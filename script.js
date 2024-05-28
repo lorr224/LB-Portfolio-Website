@@ -618,22 +618,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', handleScroll);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //  Script für Videos werden nur abgespielt, wenn sie im sichtbaren bereich sind
 
 document.addEventListener("DOMContentLoaded", function () {
