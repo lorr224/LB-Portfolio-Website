@@ -325,10 +325,7 @@ footer.visible {
   display: flex;
 }
 .header #mobile-menu {
-  background-color: #212020;
-  background: linear-gradient(to bottom, #212020, rgba(33, 32, 32, 0.9882352941));
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  background-color: rgba(33, 32, 32, 0.4784313725);
   /* Hier kannst du den gewünschten Unschärfeeffekt einstellen */
   width: 100%;
   position: absolute;
@@ -336,9 +333,11 @@ footer.visible {
   flex-direction: column;
   justify-content: center;
   z-index: 500;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 .header #mobile-menu a {
-  background: linear-gradient(to bottom, #eff5fc, rgba(239, 245, 252, 0.9921568627));
+  background: linear-gradient(to bottom, rgba(239, 245, 252, 0.9803921569), rgba(239, 245, 252, 0.9607843137));
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   /* Hier kannst du den gewünschten Unschärfeeffekt einstellen */
@@ -351,20 +350,28 @@ footer.visible {
   border-radius: 50%/50%;
   background: linear-gradient(to bottom, rgba(239, 245, 252, 0.9803921569), #eff5fc, rgba(239, 245, 252, 0.9803921569));
   /* Hier kannst du den gewünschten Unschärfeeffekt einstellen */
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
-  animation: morph2 12s linear infinite;
-  /* Hinzufügen eines leichten Bloom-Effekts beim Hover */
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 .header #mobile-menu #escape-button {
   align-self: flex-end;
   padding: 0.8rem 1rem 0.8rem 1rem;
   margin: 2rem 2rem 3rem 0rem;
   border-radius: 100px;
-  background: linear-gradient(to bottom, #eff5fc, rgba(239, 245, 252, 0.7960784314));
+  background: linear-gradient(to bottom, rgba(239, 245, 252, 0.9803921569), rgba(239, 245, 252, 0.9607843137));
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   /* Hier kannst du den gewünschten Unschärfeeffekt einstellen */
+}
+.header #mobile-menu #escape-button:hover,
+.header #mobile-menu #escape-button:focus,
+.header #mobile-menu #escape-button:active {
+  filter: brightness(110%);
+  border-radius: 50%/50%;
+  background: linear-gradient(to bottom, rgba(239, 245, 252, 0.9803921569), #eff5fc, rgba(239, 245, 252, 0.9803921569));
+  /* Hier kannst du den gewünschten Unschärfeeffekt einstellen */
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 .header #mobile-menu #mobile-links {
   min-height: 100vh;
