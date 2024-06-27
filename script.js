@@ -647,7 +647,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
 
     const submitBtn = document.getElementById('submit-btn');
-    const btnText = submitBtn.querySelector('.btn-text');
+    const btnText = submitBtn.querySelector('.btnText');
 
     // Only add the hover event listeners if it's not a touch device
     if (!isTouchDevice) {
@@ -688,6 +688,21 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         alert('Fehler beim Senden der Nachricht.');
     });
 });
+
+// Safari Browser spezifische Änderungen
+
+document.addEventListener("DOMContentLoaded", function() {
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    var btnSubmit = document.querySelector('.btnSubmit');
+
+    if (isSafari) {
+        meinObjekt.style.width = '10rem'; // Spezifische Breite für Safari
+        // Hier können weitere Safari-spezifische Anpassungen vorgenommen werden
+    }
+});
+
+
+
 
 
 
