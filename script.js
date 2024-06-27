@@ -689,17 +689,17 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     });
 });
 
-// Safari Browser spezifische Änderungen
+// // Safari Browser spezifische Änderungen
 
-document.addEventListener("DOMContentLoaded", function() {
-    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    var btnSubmit = document.querySelector('.btnSubmit');
+// document.addEventListener("DOMContentLoaded", function() {
+//     var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+//     var btnSubmit = document.querySelector('.btnSubmit');
 
-    if (isSafari) {
-        btnSubmit.style.width = '10rem'; // Spezifische Breite für Safari
-        // Hier können weitere Safari-spezifische Anpassungen vorgenommen werden
-    }
-});
+//     if (isSafari) {
+//         btnSubmit.style.width = '10rem'; // Spezifische Breite für Safari
+//         // Hier können weitere Safari-spezifische Anpassungen vorgenommen werden
+//     }
+// });
 
 
 
