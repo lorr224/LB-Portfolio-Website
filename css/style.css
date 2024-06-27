@@ -1774,7 +1774,6 @@ footer.visible {
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
   font-weight: bold;
-  font-size: 2rem;
   text-transform: uppercase;
 }
 
