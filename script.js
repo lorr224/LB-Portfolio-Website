@@ -696,7 +696,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var btnSubmit = document.querySelector('.btnSubmit');
 
     if (isSafari) {
-        meinObjekt.style.width = '10rem'; // Spezifische Breite für Safari
+        btnSubmit.style.width = '10rem'; // Spezifische Breite für Safari
         // Hier können weitere Safari-spezifische Anpassungen vorgenommen werden
     }
 });
