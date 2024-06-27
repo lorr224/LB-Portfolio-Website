@@ -1751,8 +1751,8 @@ footer.visible {
 }
 @media only screen and (min-width: 600px) {
   @supports (-webkit-appearance: none) and (not (display: grid)) {
-    .contact-container .btn-submit .btn-submit {
-      width: 12rem; /* Spezifische Breite für Safari */
+    .contact-container .btn-submit {
+      width: 10rem; /* Spezifische Breite für Safari */
     }
   }
 }
