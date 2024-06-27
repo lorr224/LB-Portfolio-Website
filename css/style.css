@@ -1714,7 +1714,7 @@ footer.visible {
   font-size: 12px;
   color: #007bff;
 }
-.contact-container .btn-submit {
+.contact-container .btnSubmit {
   width: 13rem;
   height: 3rem;
   position: relative;
@@ -1735,28 +1735,21 @@ footer.visible {
   /* Verwendung von ease-in-out für Hover-Effekte */
 }
 @media (min-width: 440px) {
-  .contact-container .btn-submit {
+  .contact-container .btnSubmit {
     width: 13.8rem;
   }
 }
 @media (min-width: 740px) {
-  .contact-container .btn-submit {
+  .contact-container .btnSubmit {
     width: 13.7rem;
   }
 }
 @media (min-width: 1024px) {
-  .contact-container .btn-submit {
+  .contact-container .btnSubmit {
     width: 13.7rem;
   }
 }
-@media only screen and (min-width: 600px) {
-  @supports (-webkit-appearance: none) and (not (display: grid)) {
-    .contact-container .btn-submit {
-      width: 400px; /* Spezifische Breite für Safari */
-    }
-  }
-}
-.contact-container .btn-text {
+.contact-container .btnText {
   position: absolute;
   left: 5%;
   right: 5%;
@@ -1775,7 +1768,7 @@ footer.visible {
     transform: translateX(-800%);
   }
 }
-.contact-container .btn-submit:hover {
+.contact-container .btnSubmit:hover {
   border-radius: 50%/50%;
   background: linear-gradient(to bottom, rgba(17, 16, 16, 0.9803921569), #111010, rgba(17, 16, 16, 0.9803921569));
   -webkit-backdrop-filter: blur(1px);
