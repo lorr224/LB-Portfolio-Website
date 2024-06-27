@@ -1683,6 +1683,7 @@ footer.visible {
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 10px -10px #eff5fc;
+  /* Safari-spezifisches CSS */
 }
 .contact-container .contact-form {
   margin-top: 20px;
@@ -1747,6 +1748,13 @@ footer.visible {
 @media (min-width: 1024px) {
   .contact-container .btn-submit {
     width: 13.7rem;
+  }
+}
+@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .contact-container .btn-submit {
+      width: 13rem; /* Spezifische Breite für Safari */
+    }
   }
 }
 .contact-container .btn-text {
